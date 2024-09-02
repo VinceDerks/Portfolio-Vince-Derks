@@ -1,0 +1,495 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: #001f3f;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #00264d;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: #ddd;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #00aced;
+}
+
+.language-switcher {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button {
+    background-color: #00aced;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher button:hover {
+    background-color: #0084b4;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #001f3f, #003366);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden; /* Ensure the rain effect stays within bounds */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    animation: fadeInUp 1.5s ease;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+    color: #bbb;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #00aced;
+    border-color: #00aced;
+}
+
+/* Rain Effect */
+.rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Make sure rain doesn't interfere with interactions */
+    overflow: hidden;
+    z-index: 1; /* Ensure it stays behind content */
+}
+
+.rain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 20%, transparent 50%);
+    opacity: 0.7;
+    animation: rain 0.5s linear infinite;
+}
+
+/* Animation for rain effect */
+@keyframes rain {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+/* Individual raindrop styling */
+.drop {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* About Me Section */
+.about-section {
+    display: flex;
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #00264d;
+}
+
+.about-section .about-content {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: center;
+    gap: 40px;
+}
+
+.about-section .text {
+    max-width: 600px;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+}
+
+.about-section .image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto; /* Maintain original aspect ratio */
+    border: 5px solid #ddd;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-section .image img:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #001f3f;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    background-color: #00264d;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+.progress {
+    background-color: #00aced;
+    height: 100%;
+    width: 0;
+    transition: width 1.5s ease;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    background-color: #003366;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.portfolio-section .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-section .portfolio-item {
+    background-color: #00264d;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-section .portfolio-item img {
+    width: 100%;
+    height: auto; /* Maintain original aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-section .portfolio-item h3 {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.portfolio-section .portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #001f3f;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section form input, .contact-section form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00264d;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-section form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-section form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00aced;
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section form button:hover {
+    background-color: #0084b4;
+}
+
+/* Footer */
+footer {
+    background-color: #00264d;
+    padding: 20px;
+    text-align: center;
+    color: #bbb;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-links img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+     100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 50px 20px;
+    }
+
+    .about-section .about-content {
+        gap: 20px;
+    }
+
+    .skills-section h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section form input, .contact-section form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-section form button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .about-section {
+        padding: 30px 10px;
+    }
+
+    .about-section .about-content {
+        flex-direction: column;
+    }
+
+    .about-section .image img {
+        max-width: 200px;
+    }
+
+    .skills-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section form input, .contact-section form textarea {
+        font-size: 0.8rem;
+    }
+
+    .contact-section form button {
+        font-size: 0.9rem;
+    }
+}

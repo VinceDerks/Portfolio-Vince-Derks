@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vince Derks - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+<header>
+    <nav>
+        <h1 id="site-title" data-translate="siteTitle">Vince Derks</h1>
+        <ul>
+            <li><a href="#hero" class="nav-item" data-translate="home">Home</a></li>
+            <li><a href="#about" class="nav-item" data-translate="about">About Me</a></li>
+            <li><a href="#skills" class="nav-item" data-translate="skills">Skills</a></li>
+            <li><a href="#portfolio" class="nav-item" data-translate="portfolio">Portfolio</a></li>
+            <li><a href="#contact" class="nav-item" data-translate="contact">Contact</a></li>
+        </ul>
+        <div class="language-switcher">
+            <button id="lang-en" data-translate="en">English</button>
+            <button id="lang-nl" data-translate="nl">Nederlands</button>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 data-translate="heroTitle">Hi, I'm Vince Derks. A Creative Developer</h1>
+            <p data-translate="heroDesc">Designing stunning, functional, and creative web experiences.</p>
+        </div>
+        <div class="rain"></div> <!-- Add this for the rain effect -->
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="text">
+                <h2 data-translate="aboutTitle">About Me</h2>
+                <p data-translate="aboutContent0">I'm Vince Derks, an 18-year-old Software Development student at Koning Willem 1 College in 's-Hertogenbosch. My experience ranges from stocking shelves at Albert Heijn to welding metal, but my true passion lies in the creative world of web development.</p>
+                <p data-translate="aboutContent1">I thrive in environments where creativity and collaboration meet, and I'm always excited to learn new technologies. Whether it's working with HTML, CSS, C#, JavaScript, or exploring Raspberry Pi projects, I'm driven by the opportunity to build something unique and functional.</p>
+                <p data-translate="aboutContent2">I live in Oss, and when I'm not coding, you can find me enjoying a drive in my BMW, a car I absolutely love.</p>
+            </div>
+            <div class="image">
+                <img src="images/image0.jpeg" alt="Vince Derks">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 data-translate="skillsTitle">Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3 data-translate="htmlSkill">HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-value="100"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 data-translate="cssSkill">CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-value="100"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 data-translate="jsSkill">JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-value="100"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 data-translate="csharpSkill">C#</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-value="80"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 data-translate="phpSkill">PHP</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-value="60"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 data-translate="pythonSkill">Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-value="40"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <h2 data-translate="portfolioTitle">Experience</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3 data-translate="curiousTitle">Curious</h3>
+                <p data-translate="curiousDesc">I'm a very curious person, I like to figure out how things work and how to effectively do certain things.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/2024-07-26.png" alt="Teamwork">
+                <h3 data-translate="teamworkTitle">Teamwork & Planning</h3>
+                <p data-translate="teamworkDesc">Experience in planning and collaborating effectively in teams. Also very good with criticism and always looking to improve in anything I do.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3 data-translate="learningTitle">Continuous Learning</h3>
+                <p data-translate="learningDesc">Passionate about learning new technologies and methodologies. I like the feeling of becoming proficient in things I didn’t understand at first.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 data-translate="contactTitle">Get In Touch</h2>
+        <form action="https://formspree.io/f/xnnarnjg" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn" data-translate="sendMessage">Send Message</button>
+        </form>
+        <p data-translate="contactInfo">Based in Oss, Netherlands. Available for collaboration.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-translate="footerText">© 2024 Vince Derks. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vince-d-232793256/"><img src="images/LinkedIn_logo_initials.png.webp" alt="LinkedIn"></a>
+            <a href="https://github.com/VinceDerks"><img src="images/25231.png" alt="GitHub"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Function to trigger progress bar animation on scroll
+        function fillProgressBars() {
+            const progressBars = document.querySelectorAll('.progress');
+            
+            progressBars.forEach(bar => {
+                const value = bar.getAttribute('data-value');
+                const sectionTop = document.getElementById('skills').offsetTop;
+                const scrollPos = window.scrollY + window.innerHeight;
+        
+                if (scrollPos > sectionTop) {
+                    bar.style.width = value + '%';
+                }
+            });
+        }
+        
+        // Listen for scroll event
+        window.addEventListener('scroll', fillProgressBars);
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const rain = document.querySelector('.rain');
+
+            function createRainDrop() {
+                const drop = document.createElement('div');
+                drop.className = 'drop';
+                drop.style.left = `${Math.random() * 100}%`;
+                drop.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
+                rain.appendChild(drop);
+            }
+
+            // Create a number of rain drops
+            for (let i = 0; i < 100; i++) {
+                createRainDrop();
+            }
+        });
+      
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const formData = new FormData(event.target);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            // Basic validation
+            if (!data.name || !data.email || !data.message) {
+                alert('Please fill out all fields.');
+                return;
+            }
+
+            // If valid, submit the form
+            fetch(event.target.action, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then(response => {
+                if (response.ok) {
+                    alert('Message sent successfully!');
+                    event.target.reset();
+                } else {
+                    alert('Failed to send message.');
+                }
+            }).catch(error => {
+                alert('An error occurred.');
+            });
+        });
+
+        // Translations object
+        const translations = {
+            en: {
+                siteTitle: 'Vince Derks',
+                home: 'Home',
+                about: 'About Me',
+                skills: 'Skills',
+                portfolio: 'Portfolio',
+                contact: 'Contact',
+                heroTitle: "Hi, I'm Vince Derks. A Creative Developer",
+                heroDesc: 'Designing stunning, functional, and creative web experiences.',
+                aboutTitle: 'About Me',
+                aboutContent0: "I'm Vince Derks, an 18-year-old Software Development student at Koning Willem 1 College in 's-Hertogenbosch. My experience ranges from stocking shelves at Albert Heijn to welding metal, but my true passion lies in the creative world of web development.",
+                aboutContent1: "I thrive in environments where creativity and collaboration meet, and I'm always excited to learn new technologies. Whether it's working with HTML, CSS, C#, JavaScript, or exploring Raspberry Pi projects, I'm driven by the opportunity to build something unique and functional.",
+                aboutContent2: "I live in Oss, and when I'm not coding, you can find me enjoying a drive in my BMW, a car I absolutely love.",
+                skillsTitle: "Skills & Expertise",
+                htmlSkill: "HTML",
+                cssSkill: "CSS",
+                jsSkill: "JavaScript",
+                csharpSkill: "C#",
+                phpSkill: "PHP",
+                pythonSkill: "Python",
+                portfolioTitle: "Experience",
+                curiousTitle: "Curious",
+                curiousDesc: "I'm a very curious person, I like to figure out how things work and how to effectively do certain things.",
+                teamworkTitle: "Teamwork & Planning",
+                teamworkDesc: "Experience in planning and collaborating effectively in teams. Also very good with criticism and always looking to improve in anything I do.",
+                learningTitle: "Continuous Learning",
+                learningDesc: "Passionate about learning new technologies and methodologies. I like the feeling of becoming proficient in things I didn’t understand at first.",
+                contactTitle: "Get In Touch",
+                sendMessage: "Send Message",
+                contactInfo: "Based in Oss, Netherlands. Available for collaboration.",
+                footerText: "© 2024 Vince Derks. All rights reserved."
+            },
+            nl: {
+                siteTitle: 'Vince Derks',
+                home: 'Home',
+                about: 'Over Mij',
+                skills: 'Vaardigheden',
+                portfolio: 'Portfolio',
+                contact: 'Contact',
+                heroTitle: "Hoi, ik ben Vince Derks. Een Creatieve Ontwikkelaar",
+                heroDesc: 'Het ontwerpen van prachtige, functionele en creatieve webervaringen.',
+                aboutTitle: 'Over Mij',
+                aboutContent0: "Ik ben Vince Derks, een 18-jarige student Software Ontwikkeling aan het Koning Willem 1 College in 's-Hertogenbosch. Mijn ervaring varieert van het vullen van schappen bij Albert Heijn tot het lassen van metalen, maar mijn ware passie ligt in de creatieve wereld van webontwikkeling.",
+                aboutContent1: "Ik gedij goed in omgevingen waar creativiteit en samenwerking samenkomen en ik ben altijd enthousiast om nieuwe technologieën te leren. Of het nu gaat om het werken met HTML, CSS, C#, JavaScript, of het verkennen van Raspberry Pi-projecten, ik word gedreven door de kans om iets unieks en functioneels te bouwen.",
+                aboutContent2: "Ik woon in Oss, en wanneer ik niet aan het coderen ben, vind je me vaak genietend van een ritje in mijn BMW, een auto waar ik absoluut dol op ben.",
+                skillsTitle: "Vaardigheden & Expertise",
+                htmlSkill: "HTML",
+                cssSkill: "CSS",
+                jsSkill: "JavaScript",
+                csharpSkill: "C#",
+                phpSkill: "PHP",
+                pythonSkill: "Python",
+                portfolioTitle: "Ervaring",
+                curiousTitle: "Nieuwsgierig",
+                curiousDesc: "Ik ben een zeer nieuwsgierig persoon, ik vind het leuk om uit te zoeken hoe dingen werken en hoe ik bepaalde dingen effectief kan doen.",
+                teamworkTitle: "Teamwerk & Planning",
+                teamworkDesc: "Ervaring in het plannen en effectief samenwerken in teams. Ook zeer goed met kritiek en altijd op zoek naar verbetering in alles wat ik doe.",
+                learningTitle: "Continue Leren",
+                learningDesc: "Gepassioneerd over het leren van nieuwe technologieën en methodologieën. Ik vind het prettig om vaardig te worden in dingen die ik eerst niet begreep.",
+                contactTitle: "Neem Contact Op",
+                sendMessage: "Verstuur Bericht",
+                contactInfo: "Gebaseerd in Oss, Nederland. Beschikbaar voor samenwerking.",
+                footerText: "© 2024 Vince Derks. Alle rechten voorbehouden."
+            }
+        };
+
+        // Function to update the content based on selected language
+        function updateContent(language) {
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+            elementsToTranslate.forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[language][key]) {
+                    el.textContent = translations[language][key];
+                }
+            });
+        }
+
+        // Event listeners for language buttons
+        document.getElementById('lang-en').addEventListener('click', () => updateContent('en'));
+        document.getElementById('lang-nl').addEventListener('click', () => updateContent('nl'));
+
+        // Initialize content in default language (English)
+        updateContent('en');
+    </script>
+</body>
+</html>
