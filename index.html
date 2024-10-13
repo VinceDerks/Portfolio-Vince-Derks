@@ -20,10 +20,6 @@
             <li><a href="#portfolio" class="nav-item" data-translate="portfolio">Portfolio</a></li>
             <li><a href="#contact" class="nav-item" data-translate="contact">Contact</a></li>
         </ul>
-        <div class="language-switcher">
-            <button id="lang-en" data-translate="en">English</button>
-            <button id="lang-nl" data-translate="nl">Nederlands</button>
-        </div>
     </nav>
 </header>
 
@@ -31,8 +27,8 @@
     <!-- Hero Section -->
 <section id="hero" class="hero-section">
     <div class="hero-content">
-        <h1 data-translate="heroTitle">Hoi, ik ben Vince Derks. Betrouwbare Bezorgchauffeur</h1>
-        <p data-translate="heroDesc">Eén jaar rijervaring en een passie voor klantgerichte bezorging. Ik zorg ervoor dat pakketten veilig en op tijd aankomen.</p>
+        <h1 data-translate="heroTitle">Hoi, ik ben Vince Derks. Betrouwbare werknemer</h1>
+        <p data-translate="heroDesc">Eén jaar rijervaring en een passie voor klantgericht werken. </p>
     </div>
     <div class="rain"></div>
 </section>
@@ -42,7 +38,7 @@
     <div class="about-content">
         <div class="text">
             <h2 data-translate="aboutTitle">Over Mij</h2>
-            <p data-translate="aboutContent0">Ik ben Vince Derks, een 18-jarige met één jaar rijervaring en een passie voor klantgericht werken. Ik heb twee jaar bij Albert Heijn gewerkt, waar ik leerde omgaan met klanten en samenwerken met collega's. Daarnaast heb ik een half jaar in een ijssalon gewerkt, waar snelheid en nauwkeurigheid belangrijk waren. Als bezorgchauffeur streef ik ernaar om elke levering veilig en efficiënt af te handelen.</p>
+            <p data-translate="aboutContent0">Ik ben Vince Derks, een 18-jarige met één jaar rijervaring en een passie voor klantgericht werken. Ik heb twee jaar bij Albert Heijn gewerkt, waar ik leerde omgaan met klanten en samenwerken met collega's. Daarnaast heb ik een half jaar in een ijssalon gewerkt, waar snelheid en nauwkeurigheid belangrijk waren. </p>
             <p data-translate="aboutContent1">Ik woon in Oss, en als ik niet aan het werk ben, geniet ik van autorijden in mijn BMW, een auto waar ik veel plezier aan beleef.</p>
         </div>
         <div class="image">
@@ -185,74 +181,6 @@
                 alert('An error occurred.');
             });
         });
-
-        // Translations object
-        const translations = {
-            en: {
-                siteTitle: 'Vince Derks',
-                home: 'Home',
-                about: 'About Me',
-                skills: 'Skills',
-                portfolio: 'Portfolio',
-                contact: 'Contact',
-                heroTitle: "Hi, I'm Vince Derks. A Creative Developer",
-                heroDesc: 'Designing stunning, functional, and creative web experiences.',
-                aboutTitle: 'About Me',
-                aboutContent0: "I'm Vince Derks, an 18-year-old Software Development student at Koning Willem 1 College in 's-Hertogenbosch. My experience ranges from stocking shelves at Albert Heijn to welding metal, but my true passion lies in the creative world of web development.",
-                aboutContent1: "I thrive in environments where creativity and collaboration meet, and I'm always excited to learn new technologies. Whether it's working with HTML, CSS, C#, JavaScript, or exploring Raspberry Pi projects, I'm driven by the opportunity to build something unique and functional.",
-                aboutContent2: "I live in Oss, and when I'm not coding, you can find me enjoying a drive in my BMW, a car I absolutely love.",
-                skillsTitle: "Skills & Expertise",
-                htmlSkill: "HTML",
-                cssSkill: "CSS",
-                jsSkill: "JavaScript",
-                csharpSkill: "C#",
-                phpSkill: "PHP",
-                pythonSkill: "Python",
-                portfolioTitle: "Experience",
-                curiousTitle: "Curious",
-                curiousDesc: "I'm a very curious person, I like to figure out how things work and how to effectively do certain things.",
-                teamworkTitle: "Teamwork & Planning",
-                teamworkDesc: "Experience in planning and collaborating effectively in teams. Also very good with criticism and always looking to improve in anything I do.",
-                learningTitle: "Continuous Learning",
-                learningDesc: "Passionate about learning new technologies and methodologies. I like the feeling of becoming proficient in things I didn’t understand at first.",
-                contactTitle: "Get In Touch",
-                sendMessage: "Send Message",
-                contactInfo: "Based in Oss, Netherlands. Available for collaboration.",
-                footerText: "© 2024 Vince Derks. All rights reserved."
-            },
-            nl: {
-                siteTitle: 'Vince Derks',
-                home: 'Home',
-                about: 'Over Mij',
-                skills: 'Vaardigheden',
-                portfolio: 'Portfolio',
-                contact: 'Contact',
-                heroTitle: "Hoi, ik ben Vince Derks. Een Creatieve Ontwikkelaar",
-                heroDesc: 'Het ontwerpen van prachtige, functionele en creatieve webervaringen.',
-                aboutTitle: 'Over Mij',
-                aboutContent0: "Ik ben Vince Derks, een 18-jarige student Software Ontwikkeling aan het Koning Willem 1 College in 's-Hertogenbosch. Mijn ervaring varieert van het vullen van schappen bij Albert Heijn tot het lassen van metalen, maar mijn ware passie ligt in de creatieve wereld van webontwikkeling.",
-                aboutContent1: "Ik gedij goed in omgevingen waar creativiteit en samenwerking samenkomen en ik ben altijd enthousiast om nieuwe technologieën te leren. Of het nu gaat om het werken met HTML, CSS, C#, JavaScript, of het verkennen van Raspberry Pi-projecten, ik word gedreven door de kans om iets unieks en functioneels te bouwen.",
-                aboutContent2: "Ik woon in Oss, en wanneer ik niet aan het coderen ben, vind je me vaak genietend van een ritje in mijn BMW, een auto waar ik absoluut dol op ben.",
-                skillsTitle: "Vaardigheden & Expertise",
-                htmlSkill: "HTML",
-                cssSkill: "CSS",
-                jsSkill: "JavaScript",
-                csharpSkill: "C#",
-                phpSkill: "PHP",
-                pythonSkill: "Python",
-                portfolioTitle: "Ervaring",
-                curiousTitle: "Nieuwsgierig",
-                curiousDesc: "Ik ben een zeer nieuwsgierig persoon, ik vind het leuk om uit te zoeken hoe dingen werken en hoe ik bepaalde dingen effectief kan doen.",
-                teamworkTitle: "Teamwerk & Planning",
-                teamworkDesc: "Ervaring in het plannen en effectief samenwerken in teams. Ook zeer goed met kritiek en altijd op zoek naar verbetering in alles wat ik doe.",
-                learningTitle: "Continue Leren",
-                learningDesc: "Gepassioneerd over het leren van nieuwe technologieën en methodologieën. Ik vind het prettig om vaardig te worden in dingen die ik eerst niet begreep.",
-                contactTitle: "Neem Contact Op",
-                sendMessage: "Verstuur Bericht",
-                contactInfo: "Gebaseerd in Oss, Nederland. Beschikbaar voor samenwerking.",
-                footerText: "© 2024 Vince Derks. Alle rechten voorbehouden."
-            }
-        };
 
         // Function to update the content based on selected language
         function updateContent(language) {
